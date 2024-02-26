@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <img src="sources/PortfolioLogo.png" alt="logo" class="logo">
-                <ul>
+                <ul id="mainMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="cross" onclick="CloseMenu()" class="fa-solid fa-xmark"></i>
                 </ul>
+                <i id="hamburger" onclick="OpenMenu()" class="fa-solid fa-bars"></i>
             </nav>
             <div class="Intro">
                 <p>Web Developer</p>
@@ -116,6 +118,25 @@
                 </div>
             </div>
             <a href="https://github.com/GuthaPrathyush" target="_blank" class="see-more-btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-heading">Contact</h1>
+            <div class="sub-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:prathyushgutha@gmail.com">prathyushgutha@gmail.com</a>
+            </div>
+            <div class="sub-contact">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+919391286191">+919391286191</a>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/GuthaPrathyush" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/gutha-prathyush-6215ba255/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/Gutha_Prathyush" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+            <a class="downloadCv" href="GuthaPrathyushResumeNew.pdf" download>Download CV</a>
         </div>
     </div>
     <script src="index.js"></script>
