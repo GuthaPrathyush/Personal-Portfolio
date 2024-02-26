@@ -3,5 +3,11 @@ function showInfo(event) {
     document.querySelector(".active-about").classList.toggle("active-about");
     event.target.classList.toggle("active-about");
     document.getElementById(String(event.target.getAttribute("name"))).classList.toggle("about-menu-matter-active");
-    console.log(event.target.classList);
+}
+
+function OpenMenu() {
+    document.querySelector("#mainMenu").style.right = "0%";
+}
+function CloseMenu() {
+    document.querySelector("#mainMenu").style.right = "-40%";
 }
