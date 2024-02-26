@@ -276,3 +276,123 @@ nav {
 .see-more-btn:hover {
     background-color: #ffd230;
 }
+
+#contact {
+    padding: 100px 0;
+}
+
+.sub-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 17px;
+    i {
+        padding-right: 10px;
+        color: #ffd230
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    margin-bottom: 30px;
+}
+
+.social-media {
+    a {
+        color: #ffd230;
+        text-decoration: none;
+        margin-right: 15px;
+        font-size: 50px;
+    }
+    margin-bottom: 50px;
+}
+
+.downloadCv {
+    width: fit-content;
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    background-color: #ffd230;
+    display: block;
+    border: 1px solid #dfae00;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    padding: 7px 75px;
+    font-weight: 900;
+}
+
+#cross {
+    display: none;
+}
+#hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px){
+    .container {
+        padding: 10px 5%;
+    }
+}
+
+@media screen and (max-width: 676px){
+    nav {
+        position: relative;
+        ul {
+            display: flex;
+            width: 40%;
+            padding-top: 30px;
+            position: fixed;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #ffd230;
+            align-items: flex-start;
+            justify-content: flex-start;
+            right: -40%;
+            top: 0;
+            z-index: 1;
+            transition: right 0.5s ease;
+            li {
+                padding-left: 20px;
+                padding-top: 30px;
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #cross {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 1.5rem;
+    }
+    #hamburger {
+        display: block;
+        font-size: 30px;
+    }
+    .sub-heading {
+        font-size: 35px;
+    }
+    .about-link {
+        font-size: 12px;
+    }
+    .services-list {
+        div {
+            i {
+                font-size: 25px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+    .Intro {
+        font-size: 25px;
+        h1 {
+            font-size: 50px;
+        }
+    }
+}
